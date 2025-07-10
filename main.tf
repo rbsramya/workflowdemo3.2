@@ -20,5 +20,4 @@ resource "aws_s3_bucket" "s3_tf" {
   #checkov:skip=CKV_AWS_21: "Ensure all data stored in the S3 bucket have versioning enabled"
   #checkov:skip=CKV2_AWS_61: "Ensure that an S3 bucket has a lifecycle configuration"
   bucket_prefix = lower("${local.name_prefix}-sctp-bkt")
-  bucket_prefix = "ramya-sctp-tfci"
-}
+  }
